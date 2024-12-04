@@ -34,8 +34,8 @@ NO_IMDB = environ.get("NO_IMDB", "https://graph.org/file/5c94a977943ac2b777d93.j
 
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1918079773').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002413283517 -1002322134400').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -48,10 +48,10 @@ PREFIX = environ.get("PREFIX", "/")
 SUPPORT_ID = environ.get('SUPPORT_ID', '')
 
 # MongoDB information
-SECONDDB_URI = environ.get('SECONDDB_URI', "")
-DATABASE_URI = environ.get('DATABASE_URI', "")
+SECONDDB_URI = environ.get('SECONDDB_URI', "mongodb+srv://rrazith:razith786@cluster0.ev2i9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ose:ose786@cluster0.s7jrb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "angel")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'angel')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Videos')
 
 
 # Others
@@ -69,10 +69,10 @@ IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'False')), False)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 PORT = environ.get("PORT", "8080")
 REQUESTED_CHANNEL = int(environ.get('REQUESTED_CHANNEL', 0))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'maxmallumovieworldsupport')
-UPDATE_CHANNEL = environ.get('UPDATE_CHANNEL', 'https://t.me/mallumovieworldmain1') # add here your update channel link
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'chat_sup_6')
+UPDATE_CHANNEL = environ.get('UPDATE_CHANNEL', 'https://t.me/All_In_One_Linkz') # add here your update channel link
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
-IMDB = is_enabled((environ.get('IMDB', "True")), True)
+IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
