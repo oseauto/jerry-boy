@@ -48,10 +48,10 @@ PREFIX = environ.get("PREFIX", "/")
 SUPPORT_ID = environ.get('SUPPORT_ID', '')
 
 # MongoDB information
-SECONDDB_URI = environ.get('SECONDDB_URI', None)
+SECONDDB_URI = environ.get('SECONDDB_URI', "")
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "autofilter")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_NAME = environ.get('DATABASE_NAME', "angel")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'angel')
 
 
 # Others
