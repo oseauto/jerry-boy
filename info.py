@@ -19,8 +19,8 @@ API_HASH = environ['API_HASH']
 BOT_TOKEN = environ['BOT_TOKEN']
 
 
-BOT_USERNAME = environ.get("BOT_USERNAME", "Kevinbotmallubot")
-BOT_NAME = environ.get("BOT_NAME", "『👑』 Dɪᴀɴᴀ Bᴏᴛ ◢ ◤")
+BOT_USERNAME = environ.get("BOT_USERNAME", "AIO_Movies_Bot")
+BOT_NAME = environ.get("BOT_NAME", "Mario Movies⚡️")
 HORRI_API_KEY = environ.get('HORRI_API_KEY', 'horridapi_NgH4odfBymrB2OmTHLJ7gw_free_key')
 
 # Bot settings
